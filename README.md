@@ -1,5 +1,5 @@
 
-**Before running the script, ensure the following:
+**Before running the script, ensure the following:**
 1.You have a Google Cloud account.
 2.Authenticate your account in cli 
 
@@ -13,7 +13,7 @@ gcloud config set project [ProjectID]
 4.You have enabled APIs for BigQuery and Google Cloud Storage (GCS).
 
 
-The first script batch.py 
+**The first script batch.py**  <!-- H1 -->
 **Overview**
 This script extracts data from Google BigQuery in batches based on timestamps, processes it to remove duplicates and handle missing values, and uploads partitioned data to Google Cloud Storage (GCS). It also maintains metadata in GCS to track the latest extracted timestamp.
 **Workflow**
@@ -53,11 +53,12 @@ max_size_kb → Maximum partition size per file upload.
 
 
 
-The second script load.py
-Overview
+
+**The second script load.py**  <!-- H1 -->
+**Overview**
 This script automates the process of fetching JSON files from Google Cloud Storage (GCS), loading them into a BigQuery table, and maintaining metadata to track processed files. It ensures that only new files are loaded, avoiding duplicate processing.
 
-Workflow
+**Workflow**
 Initialize Logging and Clients
 
 Sets up Google Cloud Logging, Storage, and BigQuery clients.
