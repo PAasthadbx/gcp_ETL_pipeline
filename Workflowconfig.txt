@@ -1,0 +1,18 @@
+Running Workflow requires Service Account
+
+Service Account Should have following roles
+1.roles/iam.serviceAccountTokenCreator 
+2.roles/aiplatform.notebookExecutorUser
+3.roles/iam.serviceAccountUser
+GRANT ALL THIS ROLES TO THE SERVICE ACCOUNT
+
+other than that 
+roles/storage.objectViewer
+roles/storage.objectUser
+roles/bigquery.jobUser
+notebooks.googleapis.com
+
+Processing Location
+
+Cloud Storage Bucket
+To keep the Notebook-> create one more bucket to save the notebooks
