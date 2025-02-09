@@ -1,6 +1,9 @@
 
 **Before running the script, ensure the following:**
+
+
 1.You have a Google Cloud account.
+
 2.Authenticate your account in cli 
 
 gcloud auth login
