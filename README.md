@@ -9,6 +9,7 @@
 gcloud auth login
 
 This will prompt you to browser and you can login to your GCP account.
+
 3.Ensure your project is set
 
 gcloud config set project [ProjectID]
